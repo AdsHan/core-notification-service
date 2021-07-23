@@ -17,7 +17,6 @@
     <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="5.0.8" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning" Version="5.0.0" />
     <PackageReference Include="MongoDB.Driver" Version="2.13.0" />
-    <PackageReference Include="SendGrid.Extensions.DependencyInjection" Version="1.0.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.1.4" />
   </ItemGroup>
   

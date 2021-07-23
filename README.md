@@ -1,6 +1,16 @@
 # core-notification-service
+Aplicação .Net Core 5.0 Web API desenvolvida com o objetivo didático de demonstrar um serviço de notificação chamado por mensageria que envia email de boas-vindas. Quando um usuário for criado será enviado o email de boas-vindas. 
 
 # Este projeto contém:
+- Arquitetura Microsserviços;
+- RabbitMQ como messaging broker;
+- MongoDB fornecendo o template de email;
+- SMTP do Gmail para envio de email; 
+- Message Bus;
+- Pattern CQRS com MediatR;
+- Fluent Validation;
+- Versionamento da API;
+- Swagger/Swagger UI;
 
 # Como executar:
 - Clonar / baixar o repositório em seu workplace.

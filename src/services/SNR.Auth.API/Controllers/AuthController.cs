@@ -23,7 +23,7 @@ namespace SNR.Auth.API.Controllers
             _mediator = mediator;
         }
 
-        // GET: api/1.0/identidade
+        // GET: api/1.0/auth
         /// <summary>
         /// Obtêm os usuários
         /// </summary>
@@ -44,14 +44,14 @@ namespace SNR.Auth.API.Controllers
             return ListUtils.isEmpty(users) ? NotFound() : CustomResponse(users);
         }
 
-        // POST api/1.0/identidade
+        // POST api/1.0/auth
         /// <summary>
         /// Grava o usuário
         /// </summary>   
         /// <remarks>
         /// Exemplo request:
         ///
-        ///     POST / Usuario
+        ///     POST / User
         ///     {
         ///         "name": "Mario",
         ///         "email": "mario@gmail.com",
@@ -73,14 +73,14 @@ namespace SNR.Auth.API.Controllers
             return result.ValidationResult.IsValid ? CreatedAtAction("NewUser", new { id = result.response }, command) : CustomResponse(result.ValidationResult);
         }
 
-        // POST api/1.0/identidade
+        // POST api/1.0/auth
         /// <summary>
         /// Efetua o login do usuário
         /// </summary>   
         /// <remarks>
         /// Exemplo request:
         ///
-        ///     POST / Usuario
+        ///     POST / User
         ///     {
         ///         "email": "mario@gmail.com",
         ///         "password": "sys123",
